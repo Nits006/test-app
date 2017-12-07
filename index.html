@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Health Insurance</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="css/custom.css">
+		<script src="js/jquery.min.js"></script>
+	  	<script src="js/bootstrap.min.js"></script>
+	  	<script src="js/custom.js"></script>
+	</head>
+	<body>
+		<div class="container">  
+		  	<h3>HEALTH INSURANCE</h3>  
+		  	<div class="row">
+			  	<div class="col-sm-3 main-box ">
+			  		<select class="form-control">
+			  			<option>YOUR GENDER</option>
+			  			<option>MALE</option>
+			  			<option>FEMALE</option>
+			  		</select>
+			  	</div>
+			  	<div class="col-sm-4 main-box">
+			  		<div class="inline-div col-sm-12">
+				  		<p class="member-head">MEMBERS TO BE INSURED</p>
+				  		<p class="member-content"></p>
+			  		</div>
+			  		<div class="inline-div div-plus-icon">
+			  			<a href="javascript:;" class="btn-open-modal"><i class="fa fa-3x fa-plus-square-o" aria-hidden="true"></i></a>
+			  		</div>
+			  	</div>
+			  	<div class="col-sm-3 main-box">
+			  	<div class="inline-div col-sm-12">
+				  		<p class="member-head">AREA PINCODE</p>
+					</div>
+			  		<div class="inline-div div-plus-icon">
+			  			<!-- <a href="javascript:;" class="btn-open-modal"><i class="fa fa-3x fa-plus-square-o" aria-hidden="true"></i></a> -->
+			  		</div>
+			  	</div>
+			</div>
+		</div>
+
+		<div class="modal fade" id="healthInsuranceModal">
+		  	<div class="modal-dialog">
+			    <div class="modal-content">
+			      	<div class="modal-header">
+				        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">X</span><span class="sr-only">Close</span></button>
+				        <h4 class="modal-title">WHO DO YOU WANT TO INSURE?</h4>
+			      	</div>
+			      	<div class="modal-body">
+			      	
+			        	<div id="family-section">
+				        	<div class="col-sm-8">
+				        		<div class="col-sm-1">
+				        			<input type="checkbox" class="family-checkbox" value="You">
+				        		</div>
+				        		<div class="col-sm-7 family_text">You</div>
+				        	</div>
+				        	<div class="col-sm-8">
+				        		<div class="col-sm-1">
+				        			<input type="checkbox" class="family-checkbox" value="Wife">
+				        		</div>
+				        		<div class="col-sm-7 family_text">Wife</div>
+				        	</div>
+				        	<div class="col-sm-8">
+				        		<div class="col-sm-1">
+				        			<input type="checkbox" class="family-checkbox" value="Father">
+				        		</div>
+				        		<div class="col-sm-7 family_text">Father</div>
+				        	</div>
+				        	<div class="col-sm-8">
+				        		<div class="col-sm-1">
+				        			<input type="checkbox" class="family-checkbox" value="Mother">
+				        		</div>
+				        		<div class="col-sm-7 family_text">Mother</div>
+				        	</div>
+				        	<div class="col-sm-12">
+				        		<div class="col-sm-1">
+				        			<input type="checkbox" class="family-checkbox" value="Son">
+				        		</div>
+				        		<div class="col-sm-7 family_text">Son</div>
+				        		<div class="col-sm-3 hide" id="sonQtyblock">
+				        			<a href="javascript:;"><i class="fa fa-lg fa-minus-square-o" aria-hidden="true"></i></a>
+				        			<span id="sonQty">4</span>
+				        			<a href="javascript:;"><i class="fa fa-lg fa-plus-square-o" aria-hidden="true"></i></a>
+
+				        		</div>
+				        	</div>
+				        	<div class="col-sm-8">
+				        		<div class="col-sm-1">
+				        			<input type="checkbox" class="family-checkbox" value="Daughter">
+				        		</div>
+				        		<div class="col-sm-7 family_text">Daughter</div>
+				        	</div>
+				        </div>
+				        <div id="family-age-section">
+			        		<form role="form"></form>
+				        </div>
+			      	</div>
+			      	<div class="modal-footer">
+			      		<button type="button" class="btn btn-orange btn-continue">CONTINUE</button>
+			      		<button type="button" class="btn btn-orange" id="btn-done" data-dismiss="modal">DONE</button>
+			      		<button type="button" class="btn btn-default" id="btn-back">Back</button>
+			      	</div>
+			      	<div align="center" class="validateMsgBlock">
+			      		<span id="validateMsg" style="color: red;"></span>
+			      	</div>
+			    </div><!-- /.modal-content -->
+			</div><!-- /.modal-dialog -->
+		</div><!-- /.modal -->
+
+	</body>
+</html>
